@@ -1,0 +1,22 @@
+[
+  {
+    "query": "Kiểm tra URL https://viettelstore.vn/",
+    "analysis": "Kết quả từ công cụ VirusTotal cho thấy không có dấu hiệu độc hại nào được phát hiện (malicious: 0, suspicious: 0, clean: 0). Điều này cho thấy rằng URL không bị đánh dấu là nguy hiểm bởi bất kỳ công cụ nào trong cơ sở dữ liệu của VirusTotal. Thêm vào đó, thông tin từ công cụ đánh giá độ tin cậy của miền cho thấy rằng miền viettelstore.vn có thể phân giải DNS thành một địa chỉ IP hợp lệ (171.244.59.84) và không có dấu hiệu nào cho thấy miền này có mẫu đáng ngờ. Độ dài miền cũng nằm trong khoảng bình thường (15 ký tự). Tất cả các yếu tố này đều chỉ ra rằng trang web có vẻ an toàn và không có dấu hiệu của hoạt động độc hại.",
+    "result": "CLEAN"
+  },
+  {
+    "query": "Check C:\\Windows\\NetworkDistribution\\svchost.exe",
+    "analysis": "- analysis: \n  Tập tin `svchost.exe` nằm trong thư mục `C:\\Windows\\NetworkDistribution`, đây là một vị trí không bình thường cho một tập tin hệ thống quan trọng như `svchost.exe`. Thông thường, `svchost.exe` được tìm thấy trong thư mục `C:\\Windows\\System32`. Việc xuất hiện của nó ở một vị trí không chuẩn có thể là dấu hiệu của một phần mềm độc hại hoặc một cuộc tấn công. Hơn nữa, chỉ số \"suspicious_name\" cho thấy tên tập tin có thể gây nghi ngờ, vì nó có thể được sử dụng để đánh lừa người dùng hoặc các công cụ bảo mật. Mặc dù điểm rủi ro chỉ là 2, nhưng các chỉ số khác cho thấy có khả năng cao rằng đây là một tập tin độc hại. \n\n- result: ABNORMAL",
+    "result": "ABNORMAL"
+  },
+  {
+    "query": "C:\\windows\\SysWOW64\\schtasks.exe có độc hại không ?",
+    "analysis": "- **analysis**: Tệp \"schtasks.exe\" nằm trong thư mục \"C:\\windows\\SysWOW64\", đây là một vị trí hệ thống quan trọng của Windows. Tuy nhiên, kết quả phân tích cho thấy có một số dấu hiệu đáng ngờ. Cụ thể, mặc dù tệp không nằm trong thư mục tạm thời và không có dấu hiệu của tên đáng ngờ hay phần mở rộng kép, nhưng nó lại nằm ở một vị trí không phải là đường dẫn hệ thống chuẩn cho các tệp thực thi của Windows. Điều này có thể cho thấy rằng tệp này có thể không phải là bản gốc của Windows hoặc đã bị thay đổi bởi một phần mềm độc hại. Hơn nữa, điểm số rủi ro là 1, cho thấy rằng có một số dấu hiệu nghi ngờ, nhưng không đủ để xác định chắc chắn rằng nó độc hại. \n\n- **result**: ABNORMAL",
+    "result": "UNKNOWN"
+  },
+  {
+    "query": "File npkpdb.dll có hash 178ba564b39bd07577e974a9b677dfd86ffa1f1d0299dfd958eb883c5ef6c3e1 kiểm tra đi",
+    "analysis": "File npkpdb.dll có hash 178ba564b39bd07577e974a9b677dfd86ffa1f1d0299dfd958eb883c5ef6c3e1 có một số chỉ số đáng chú ý. Mặc dù điểm rủi ro chỉ là 1, cho thấy mức độ nguy hiểm thấp, nhưng có một chỉ số quan trọng là \"unusual_location\" (vị trí không bình thường) được đánh dấu là true. Điều này cho thấy file này không nằm trong các thư mục thông thường mà các file DLL hợp lệ thường xuất hiện, điều này có thể là dấu hiệu của một file độc hại hoặc một file không đáng tin cậy. Các chỉ số khác như \"temp_directory\", \"double_extension\", \"hidden_chars\", và \"suspicious_name\" đều không có dấu hiệu đáng ngờ, nhưng vị trí không bình thường vẫn là một yếu tố quan trọng cần xem xét.",
+    "result": "ABNORMAL"
+  }
+]
